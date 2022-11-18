@@ -6,7 +6,7 @@
     $redis = new Predis\Client();
 
     $client = new MongoDB\Client(
-            'mongodb+srv://root:root@cluster0.bhlc8oc.mongodb.net/guvi?retryWrites=true&w=majority');
+            'mongodb+srv://<username>:<pass>@<clusterID>/<db>?retryWrites=true&w=majority');
     $collection = $client->guvi->user;
 
             
